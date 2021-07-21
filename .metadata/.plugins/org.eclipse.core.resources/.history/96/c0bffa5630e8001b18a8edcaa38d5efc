@@ -1,0 +1,28 @@
+package com.work.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+@Configuration
+public class WebMvcConfig implements WebMvcConfigurer {
+	
+	// DI 인터셉터 객체 : 다중의 인스턴스인경우에는 Qualifier 사용하여 해당 instance 지정
+	@Autowired
+	@Qualifier("beforeActionInterceptor")
+	HandlerInterceptor beforeActionInterceptor;
+	
+	@Autowired
+	@Qualifier("needToLoginInterceptor")
+	HandlerInterceptor needToLoginInterceptor;
+	
+	@Autowired
+	@Qualifier("needToLogoutInterceptor")
+	HandlerInterceptor needToLogoutInterceptor;
+	
+	@Autowired
+	@Qualifier("needToAdminInterceptor")
+	HandlerInterceptor needToAdminInterceptor;
+}

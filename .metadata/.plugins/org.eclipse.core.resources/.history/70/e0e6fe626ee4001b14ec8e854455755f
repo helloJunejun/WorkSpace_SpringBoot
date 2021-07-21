@@ -1,0 +1,21 @@
+package com.work.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class MemberService {
+	// ArrayList<Member> 멤버변수 선언 및 생성 : 회원들의 자료 저장구조
+	private ArrayList<Member> list = new ArrayList<Member>();
+	
+	// initMember() 메서드에서 3명의 회원 등록 구현, 일반회원, 우수회원, 관리자
+	
+	public MemberService() {
+		initMember();
+		System.out.println("MemberService() constructor loading");
+	}
+	
+	public int getSize() {
+		return list.size();
+		
+	}
+}

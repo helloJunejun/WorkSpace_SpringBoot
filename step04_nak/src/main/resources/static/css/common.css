@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* filename : css/common.css */
+a {text-decoration: none;}
+a:hober {color: red;}
+
+input{display: block; margin: 5px}
+
+input[type=submit], input[type=reset], input[type=button] { display:inline;}

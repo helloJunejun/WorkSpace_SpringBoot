@@ -1,0 +1,17 @@
+package com.work.service;
+
+import org.springframework.stereotype.Service;
+
+import com.work.dao.MemberDao;
+
+@Service
+public class MemberService {
+	
+	private MemberDao memberDao;
+
+	/* 로그인 */
+	public String login(String memberId, String memberPw) {
+	
+		return null;
+	}
+}

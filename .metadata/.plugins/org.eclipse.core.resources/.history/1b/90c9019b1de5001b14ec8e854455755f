@@ -1,0 +1,18 @@
+#서버 포트번호 변경
+server.port=8070
+
+
+# jsp veiw resolver어플리케이션 환경 설정
+spring.mvc.view.prefix=/WEB-INF/jsp/
+spring.mvc.view.suffix=.jsp
+
+#server auto reload
+spring.devtools.livereload.enabled=true
+
+# oracle resource
+spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521:XE
+spring.datasource.username=scott
+spring.datasource.password=tiger
+
+# myBatis : 도메인 멤버변수(memberId)명과 컬럼명(member_id) 규칙준수 전제조건 매핑

@@ -1,0 +1,16 @@
+package com.work.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class MemberService {
+	
+	public MemberService() {
+		System.out.println("MemberService() constructor loading");
+	}
+	
+	public int getSize() {
+		return 0;
+		
+	}
+}

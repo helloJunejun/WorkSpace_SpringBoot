@@ -1,0 +1,19 @@
+package com.work.service;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Service;
+
+import com.work.dto.Member;
+
+@Service
+public class MemberService {
+	
+	private MemberDao memberDao;
+
+	/* 로그인 */
+	public String login(String memberId, String memberPw) {
+	
+		return null;
+	}
+}

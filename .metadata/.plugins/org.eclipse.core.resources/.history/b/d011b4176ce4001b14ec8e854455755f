@@ -1,0 +1,13 @@
+package com.work.service;
+
+public class MemberService {
+	
+	public MemberService() {
+		System.out.println("MemberService() constructor loading");
+	}
+	
+	public int getSize() {
+		return 0;
+		
+	}
+}

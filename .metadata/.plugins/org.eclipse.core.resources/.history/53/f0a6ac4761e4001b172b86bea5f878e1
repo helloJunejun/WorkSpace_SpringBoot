@@ -1,0 +1,5 @@
+package com.work.controller;
+
+public @interface Controller {
+
+}

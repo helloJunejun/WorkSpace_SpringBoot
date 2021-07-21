@@ -1,0 +1,17 @@
+package com.example.demo.dto;
+
+import org.springframework.boot.context.properties.ConstructorBinding;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Setter
+@Getter
+@ToString
+@ConstructorBinding
+public class Member {
+	private String memberId;
+	private String memberPw;
+	private String name;
+}

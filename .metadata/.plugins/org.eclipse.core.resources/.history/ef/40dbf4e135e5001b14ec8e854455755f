@@ -1,0 +1,10 @@
+package com.work.utility;
+
+public interface Utility {
+
+	static String getCurrentDate() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

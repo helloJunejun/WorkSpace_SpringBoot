@@ -1,0 +1,11 @@
+package com.work.dao;
+
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface MemberDao {
+	/** 로그인 */
+	public String login(String memberId, String memberPw);
+	
+	public List<Member> memberList();
+}

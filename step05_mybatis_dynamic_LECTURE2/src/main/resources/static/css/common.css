@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* Filename : css/common.css */
+
+/* a config*/
+a { text-decoration: none; }
+a:hover { color: red; }
+
+/* form config : input 태그 block, margin 설정 */
+input { display: block; margin: 5px; }
+
+/* form config : input 태그 submit, reset, button inline 설정 */
+input[type="submit"], input[type="reset"], input[type="button"] { display: inline; }
+
+/* table */
+table, tr, td, th { border: solid 1px royalblue; padding: 5px; margin: 5px; }
+
+/* 다중조건검색 */
+input.inline { display: inline; }
+div.multipleCondition { margin-top: 20px; margin-left: 20px; }
